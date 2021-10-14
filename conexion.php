@@ -7,7 +7,7 @@ class Conexion implements CRUD_api {
     private $con;
     public function __construct()
     {
-        $this->con=new PDO('mysql:host=localhost;dbname=prueba2', "root", "");
+        $this->con=new PDO('mysql:host=localhost;dbname=company', "root", "");
     }
 
     public function read_by_dni(int $dni, string $tabla)
